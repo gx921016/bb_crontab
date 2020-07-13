@@ -1,7 +1,4 @@
 {
-  "API服务端口": "提供任务增删改查服务",
-  "apiPort": 8070,
-
   "API接口读超时": "单位是毫秒",
   "apiReadTimeout": 5000,
 
@@ -12,8 +9,5 @@
   "etcdEndpoints":["120.92.35.252:2379"],
 
   "etcd的的连接超时": "单位毫秒",
-  "etcdDialTimeout":5000,
-
-  "web页面根目录": "静态页面路径",
-  "webroot": "./webroot"
+  "etcdDialTimeout":5000
 }
