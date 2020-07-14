@@ -7,12 +7,12 @@ import (
 )
 
 type Config struct {
-	Apipoint        int      `json:"apiPort"`
-	ApiReadTimeout  int      `json:"apiReadTimeout"`
-	ApiWriteTimeout int      `json:"apiWriteTimeout"`
-	EtcdEndPoints   []string `json:"etcdEndpoints"`
-	EtcdDialTimeout int      `json:"etcdDialTimeout"`
-	WebRoot         string   `json:"webroot"`
+	EtcdEndPoints         []string `json:"etcdEndpoints"`
+	EtcdDialTimeout       int      `json:"etcdDialTimeout"`
+	MongodbUri            string   `json:"mongodbUri"`
+	MongodbConnectTimeout int      `json:"mongodbConnectTimeout"`
+	JobLogBatchSize       int      `json:"jobLogBatchSize"`
+	JobLogCommitTimeout   int      `json:"jobLogCommitTimeout"`
 }
 
 var (

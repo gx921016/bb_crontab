@@ -52,7 +52,6 @@ func handleJobSave(w http.ResponseWriter, r *http.Request) {
 	//5、返回正常应答
 	if bytes, err = common.BuildResponse(0, "success", oldJob); err == nil {
 		w.Write(bytes)
-		log.Println(bytes)
 	}
 
 	return
@@ -84,7 +83,6 @@ func handleJobDelete(w http.ResponseWriter, r *http.Request) {
 	//5、返回正常应答
 	if bytes, err = common.BuildResponse(0, "success", oldJob); err == nil {
 		w.Write(bytes)
-		log.Println(bytes)
 	}
 	return
 ERR:
@@ -109,7 +107,6 @@ func handleJobList(w http.ResponseWriter, r *http.Request) {
 	//5、返回正常应答
 	if bytes, err = common.BuildResponse(0, "success", jobList); err == nil {
 		w.Write(bytes)
-		log.Println(bytes)
 	}
 	return
 ERR:
@@ -135,7 +132,6 @@ func handleJobKill(w http.ResponseWriter, r *http.Request) {
 	//5、返回正常应答
 	if bytes, err = common.BuildResponse(0, "success", nil); err == nil {
 		w.Write(bytes)
-		log.Println(bytes)
 	}
 	return
 ERR:
